@@ -11,3 +11,10 @@ function is_email_valid(string $email) {
     return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
     
+function is_email_registered(object $pdo, string $email) {
+    return is_email_already_used($pdo, $email);
+}
+
+function add_new_user(object $pdo, string $firstname, string $email, string $password) {
+    return add_user($pdo, $firstname, $email, $password);
+}
