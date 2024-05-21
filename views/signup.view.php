@@ -6,5 +6,3 @@ if(isset($_SESSION['errors'])) {
     }
     unset($_SESSION['errors']);
 }
-
-echo '<p>' . var_dump($_SESSION) . '</p>'; 
