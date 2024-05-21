@@ -18,7 +18,6 @@ if(isset($_SESSION['user'])) {
     require_once 'routes/login.php';
 }
 
-dd($_GET)
 
 ?>
 

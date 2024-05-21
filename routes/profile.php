@@ -10,8 +10,8 @@
                 alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
               <h5><?php echo $_SESSION['user']['username']?></h5>
               <p>Web Designer</p>
-              <form action="includes/editprofile.php">
-              <button type="submit"><i class="far fa-edit mb-5"></i></button>
+              <form action="includes/editprofile.inc.php">
+              <button type="submit" ><i class="far fa-edit mb-5"></i></button>
               </form>
             </div>
             <div class="col-md-8">
