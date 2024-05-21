@@ -1,9 +1,10 @@
 <?php
 
 if(isset($_SESSION['errors'])) {
-    echo '<p>' .$_SESSION['errors'] . '</p>';
-}else {
-    echo '<p>' .$_SESSION['errors'] . '</p>'; 
+    foreach($_SESSION['errors'] as $error) {
+        echo '<p class="error">' .$error. '</p>';
+    }
+    unset($_SESSION['errors']);
 }
 
-echo '<p>' . "HELLO" . '</p>'; 
+echo '<p>' . var_dump($_SESSION) . '</p>'; 

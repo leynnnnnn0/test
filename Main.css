@@ -30,3 +30,11 @@ body, html {
     font-size: 2rem;
     font-weight: bolder;
 }
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}

@@ -1,6 +1,7 @@
 <?php
 
 require_once '../util.php';
+require_once '../session_config.php';
 
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $firstname = $_POST['first-name'];
