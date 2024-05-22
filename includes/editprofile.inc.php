@@ -31,11 +31,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     if($result) {
         $_SESSION['message'] = 'Details updated';
+        $_SESSION['user']['username'] = $username;
+        $_SESSION['user']['email'] = $email;
         header('Location:../index.php?editDetails=true');
         die();
-    }
-
-    
+    } 
 }else {
     header("Location: ../index.php?editDetails=true");
 }

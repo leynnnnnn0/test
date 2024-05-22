@@ -10,7 +10,7 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="/profilesystem/createpost">Create Post</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Contacts</a>
