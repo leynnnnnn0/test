@@ -12,3 +12,15 @@ function add_post(object $pdo, string $body, string $id) {
         echo "Error: ". $e->getMessage();
     }
 }
+
+function fetchPosts(object $pdo, $id) {
+    try {
+        $query = "SELECT * FROM posts WHERE user_id = :id";
+        $stmt = $pdo->connection->prepare($query);
+        $stmt->bindParam(":id", $id, PDO::PARAM_STR);
+        $stmt->execute();
+        return $stmt->fetchAll();
+    }catch(PDOException $e) {
+        echo "Error: ". $e->getMessage();
+    }
+}

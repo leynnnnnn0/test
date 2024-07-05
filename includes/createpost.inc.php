@@ -13,6 +13,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     $body = $_POST['body'];
     $errors = [];
 
+    unset($_SESSION['posts']);
+    $_SESSION['posts']= fetchPosts($pdo, $id);
+
     if (isEmpty($body)) {
         $errors[] = 'body is empty';
     }
